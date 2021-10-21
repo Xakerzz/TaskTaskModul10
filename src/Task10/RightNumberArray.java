@@ -3,7 +3,7 @@ package Task10;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class RightNumber {
+public class RightNumberArray {
     public static void main(String[] args) {
         start();
     }
@@ -24,7 +24,7 @@ public class RightNumber {
             }
         } catch (NegativeArraySizeException e) {
             System.out.println("Error -An array can not be a negative. " + e.getMessage());
-            // throw new WeAllLikeDoException("Error - An array can not be a negative. "+ e.getMessage(),1); - Тогда в сигнатуры методов надо довавить throws WeAllLikeDoException,
+            // throw new WeAllLikeDoException("Error - An array can not be a negative. "+ e.getMessage(),1); - Тогда в сигнатуры методов надо добавить throws WeAllLikeDoException,
             // но вариант с болееприятным выводом, и продолжением программы более приемлимо.
         } catch (InputMismatchException e) {
             System.out.println("Error -An integer array can not contain any charettes. " + e.getMessage());
